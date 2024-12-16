@@ -114,7 +114,7 @@ best_practice_logger_elastic_query-master/
 ### Postman
 Postman was used for testing APIs interactively. Below is an example screenshot showing API requests and responses:
 
-![Postman Example](path/to/postman-screenshot.png)
+![Postman Example](postman-screenshot.png)
 
 ### H2 Database
 An in-memory H2 database was used for quick development and testing. The console can be accessed at:
@@ -123,11 +123,10 @@ An in-memory H2 database was used for quick development and testing. The console
 http://localhost:8080/h2-console
 ```
 
-![H2 Console](path/to/h2-console-screenshot.png)
+![H2 Console](h2-console-screenshot.png)
+
 
 ## Contributing
 Feel free to submit issues or create pull requests to contribute to this project.
 
-## License
-This project is licensed under the MIT License. See the `LICENSE` file for details.
 
