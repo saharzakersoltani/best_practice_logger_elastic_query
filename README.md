@@ -104,6 +104,22 @@ best_practice_logger_elastic_query-master/
 ```
 
 ## Testing
+
+### Sample Audit JSON Response
+Below is a sample response for an audit log when fetching an entity:
+
+```json
+{
+    "id": 1,
+    "name": "sahar",
+    "auditLog": {
+        "createdBy": "System",
+        "createdAt": "2024-12-17T02:29:37.553585",
+        "updatedBy": "System",
+        "updatedAt": "2024-12-17T03:29:59.952911"
+    }
+}
+```
 - Run unit tests:
   ```bash
   ./mvnw test
@@ -115,6 +131,12 @@ best_practice_logger_elastic_query-master/
 Postman was used for testing APIs interactively. Below is an example screenshot showing API requests and responses:
 
 ![Postman Example](postman-screenshot.png)
+
+#### Available Endpoints in Postman
+- **GET /api/entities/{id}**: Fetch a specific entity by ID.
+- **PUT /api/entities/{id}**: Update a specific entity.
+- **DELETE /api/entities/{id}**: Delete a specific entity.
+
 
 ### H2 Database
 An in-memory H2 database was used for quick development and testing. The console can be accessed at:
