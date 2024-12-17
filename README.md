@@ -15,9 +15,31 @@ This project implements a logging mechanism with best practices for tracking and
 
 ## Installation
 
+### Database Configuration
+The project uses an in-memory H2 database for development and testing. The configuration for the database is located in `application.properties`:
+
+```properties
+# H2 Database configuration
+spring.datasource.url=jdbc:h2:mem:testdb
+spring.datasource.driverClassName=org.h2.Driver
+spring.datasource.username=sa
+spring.datasource.password=password
+spring.h2.console.enabled=true
+spring.h2.console.path=/h2-console
+```
+
+You can access the H2 console at:
+```
+http://localhost:8080/h2-console
+```
+
+Make sure to use the same `JDBC URL` as specified in the configuration.
+
+
+
 1. Clone the repository:
    ```bash
-   git clone <https://github.com/saharzakersoltani/best_practice_logger_elastic_query.git>
+   git clone <repository-url>
    cd best_practice_logger_elastic_query-master
    ```
 
